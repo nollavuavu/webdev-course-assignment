@@ -11,4 +11,4 @@ will just be some links.
 - 16 Sep: Initialize stuff. Created the general grid and flexbox for the content. I believe it was around 1 and a half hour for this
 since I write the code while watching the tutorial on Youtube. The video is https://www.youtube.com/watch?v=G3e-cpL7ofc&t=15312s
 
-
+- 17 Sep: Polish the header and everything a lil bit. 
