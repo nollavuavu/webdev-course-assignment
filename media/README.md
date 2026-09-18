@@ -12,3 +12,5 @@ will just be some links.
 since I write the code while watching the tutorial on Youtube. The video is https://www.youtube.com/watch?v=G3e-cpL7ofc&t=15312s
 
 - 17 Sep: Polish the header and everything a lil bit. 
+
+- 18 Sep: Yeah today was a bunch of writing and deleting ideas so nothing much was added.
