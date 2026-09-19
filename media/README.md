@@ -14,3 +14,5 @@ since I write the code while watching the tutorial on Youtube. The video is http
 - 17 Sep: Polish the header and everything a lil bit. 
 
 - 18 Sep: Yeah today was a bunch of writing and deleting ideas so nothing much was added.
+
+- 19 Sep: Added a bunch of courses.
