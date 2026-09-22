@@ -50,18 +50,35 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    align-items: center;
+    align-items: start;
     padding: 20px;
-    
 }
 
-.beginner-section, .intermediate-section, .advanced-section {
+.course-section {
     margin-left: 18px;
     margin-right: 18px;
     height: 800px;
+    box-sizing: border-box;
+    overflow: auto;
     background-color: rgb(28, 30, 37);
     border-radius: 10px;
     border: 1px solid rgb(78, 75, 75);
+}
+
+.category-group {
+    margin-bottom: 18px;
+}
+
+.category-title {
+    margin: 14px 0 4px 20px;
+    color: #aeb6c4;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .section-title {
@@ -72,41 +89,50 @@ body {
     color: white;
 }
 
-.content a,
-.content a:visited,
-.content a:active {
+.course-entry {
     display: block;
     text-decoration: none;
     margin-left: 20px;
     color: white;
 }
 
-.content a:hover {
+.course-entry a,
+.course-entry a:visited,
+.course-entry a:active {
+    color: white;
     text-decoration: none;
 }
 
-.content a strong:hover {
+.course-entry a strong:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.content a {
+.course-entry {
     position: relative;
     padding: 4px;
     font-size: 15px;
+    white-space: nowrap;
     cursor: default;
 }
 
-.content a:has(> strong:hover)::after {
-    content: attr(data-tooltip);
-    position: absolute;
+.course-tooltip {
+    position: fixed;
     left: 0;
-    top: 100%;
-    margin-top: 5px;
+    top: 0;
     padding: 6px 10px;
     color: white;
     background: #333;
     border-radius: 4px;
-    white-space: nowrap;
+    max-width: min(360px, calc(100vw - 16px));
+    white-space: normal;
     z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.course-tooltip.is-visible {
+    opacity: 1;
+    visibility: visible;
 }

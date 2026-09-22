@@ -3,14 +3,12 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Courseri</title>
+    <link rel="stylesheet" href="style.css?v=6">
+    <script src="script.js?v=4" defer></script>
+    <title>Coursi</title>
 </head>
 <body>
     <div class="header">
@@ -25,216 +23,51 @@
         </div>
     </div>
 
-    <div class = "content">
-        <div class = "beginner-section">
+    <main class="content" id="course-catalog" aria-live="polite">
+        <section class="course-section" data-level="beginner">
             <h2 class="section-title">I Beginner</h2>
-                <a href="https://cs50.harvard.edu/x/" 
-                target="_blank"
-                data-tooltip="Computer Science from Harvard University">
-                    <strong>CS50</strong> &#183; 11 weeks &#183; Harvard University
-                </a>
-
-                <a href="cs61a.org" 
-                target="_blank"
-                data-tooltip="Computer Science from University of California, Berkeley">
-                    <strong>CS61A</strong> &#183; 15 weeks &#183; UC, Berkeley
-                </a>
-
-                <a href="https://programming-24.mooc.fi/" 
-                target="_blank"
-                data-tooltip="Programming with Python from University of Helsinki">
-                    <strong>Python I + II</strong> &#183; N/A &#183; University of Helsinki
-                </a>
-
-                <a href="https://www.coursera.org/learn/problem-solving-programming-video-games" 
-                target="_blank"
-                data-tooltip="Problem Solving, Python Programming, and Video Games from Coursera">
-                    <strong>Python</strong> &#183; 80 hours &#183; University of Alberta
-                </a>
-
-                <a href="https://www.coursera.org/learn/cs-programming-java" 
-                target="_blank"
-                data-tooltip="Introduction to Programming with Java from Coursera">
-                    <strong>Java</strong> &#183; 80 hours &#183; Princeton University
-                </a>
-
-                <a href="https://java-programming.mooc.fi/" 
-                target="_blank"
-                data-tooltip="Java Programming I and II from University of Helsinki">
-                    <strong>Java I + II</strong> &#183; 280 hours &#183; University of Helsinki
-                </a>
-
-                <a href="https://www.codecademy.com/learn/learn-c-plus-plus-introduction" 
-                target="_blank"
-                data-tooltip="Introduction to Programming with C++ from Codecademy">
-                    <strong>C++</strong> &#183; 4 hours &#183; Codecademy
-                </a>
-
-                <a href="https://www.edx.org/learn/computer-science/pragmatic-ai-labs-rust-fundamentals" 
-                target="_blank"
-                data-tooltip="Rust Fundamentals with Rust from edX">
-                    <strong>Rust</strong> &#183; 24 hours &#183; edX
-                </a>
-
-                <a href="https://www.codecademy.com/learn/learn-css-introduction" 
-                target="_blank"
-                data-tooltip="Introduction to CSS from Codecademy">
-                    <strong>CSS</strong> &#183; 2 hours &#183; Codecademy
-                </a>
-
-                <a href="https://apply.uopeople.edu" 
-                target="_blank"
-                data-tooltip="IBM SkillsBuild Data Analytics through University of the People">
-                    <strong>Data Analytics</strong> &#183; 60 hours &#183; UoP
-                </a>
-
-                <a href="https://apply.uopeople.edu" 
-                target="_blank"
-                data-tooltip="IBM SkillsBuild Cybersecurity through University of the People">
-                    <strong>Cybersecurity</strong> &#183; 55 hours &#183; UoP
-                </a>
-
-                <a href="https://www.edx.org/learn/computer-science/university-system-of-maryland-cybersecurity-essentials" 
-                target="_blank"
-                data-tooltip="Cybersecurity Essentials from edX">
-                    <strong>Cybersecurity</strong> &#183; 50 hours &#183; UMBC
-                </a>
-
-                 <a href="https://www.edx.org/learn/sql/ibm-sql-for-data-science-with-r?" 
-                target="_blank"
-                data-tooltip="SQL for Data Science with R from edX">
-                    <strong>SQL for Data Science</strong> &#183; 18 hours &#183; IBM
-                </a>
-
-                <a href="https://www.edx.org/learn/network-security/ibm-database-basics-and-security" 
-                target="_blank"
-                data-tooltip="Database Basics and Security from edX">
-                    <strong>Database & Security</strong> &#183; 16 hours &#183; IBM
-                </a>
-
-                <a href="https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/" 
-                target="_blank"
-                data-tooltip="Computer System Engineering from Massachusetts Institute of Technology">
-                    <strong>Computer System Engineering</strong> &#183; 15 weeks &#183; MIT
-                </a>
-
-                <a href="https://www.edx.org/learn/computer-science/pragmatic-ai-labs-devops-dataops-mlops" 
-                target="_blank"
-                data-tooltip="DevOps, DataOps, and MLOps from Pragmatic AI Labs">
-                    <strong>DevOps</strong> &#183; 24 hours &#183; edX
-                </a>
-
-                <a href="https://online.stanford.edu/explore?filter%5B0%5D=free_or_paid%3Afree&filter%5B1%5D=topic%3A1062&filter%5B2%5D=type%3Acourse" 
-                target="_blank"
-                data-tooltip="Statistical Learning from Stanford University">
-                    <strong>Statistical Learning</strong> &#183; N/A &#183; Stanford University
-                </a>
-
-                <a href="https://fitech.io/en/studies/introduction-to-ui/" 
-                target="_blank"
-                data-tooltip="Introduction to UI from Fitech">
-                    <strong>User Interfaces</strong> &#183; N/A &#183; LUT University
-                </a>
-
-        </div>
-        <div class = "intermediate-section">
-            <h2 class ="section-title">II Intermediate</h2>
-                <a href="https://www.coursera.org/learn/cs-algorithms-theory-machines" 
-                target="_blank"
-                data-tooltip="Algorithms: Theory and Machines from Coursera">
-                    <strong>Java</strong> &#183; 20 hours &#183; Princeton University
-                </a>
-
-                <a href="https://www.coursera.org/learn/algorithms-part1" 
-                target="_blank"
-                data-tooltip="Algorithms: Part 1 from Coursera">
-                    <strong>Java</strong> Algorithm 1 &#183; 50 hours &#183; Princeton University
-                </a>
-
-                <a href="https://www.coursera.org/learn/algorithms-part2" 
-                target="_blank"
-                data-tooltip="Algorithms: Part 2 from Coursera">
-                    <strong>Java</strong> Algorithm 2 &#183; 60 hours &#183; Princeton University
-                </a>
-
-                <a href="https://www.coursera.org/learn/comptia-security-701" 
-                target="_blank"
-                data-tooltip="CompTIA Security+ 701 from INFOSEC">
-                    <strong>CompTIA Security+ 701</strong> &#183; 20 hours &#183; Coursera
-                </a>
-
-                <a href="https://www.edx.org/learn/data-science/harvard-university-introduction-to-data-science-with-python" 
-                target="_blank"
-                data-tooltip="Data Science with Python from edX">
-                    <strong>Data Science</strong> &#183; 32 hours &#183; Harvard University
-                </a>
-
-                <a href="https://www.edx.org/learn/machine-learning/harvard-university-machine-learning-and-ai-with-python" 
-                target="_blank"
-                data-tooltip="Machine Learning and AI with Python from edX">
-                    <strong>Machine Learning & AI</strong> &#183; 30 hours &#183; Harvard University
-                </a>
-
-                <a href="https://www.edx.org/learn/devops/ibm-devops-and-software-engineering-capstone-project" 
-                target="_blank"
-                data-tooltip="DevOps and Software Engineering Capstone Project with Python from edX">
-                    <strong>DevOps & Software Engineering</strong> &#183; 5 weeks &#183; IBM
-                </a>
-
-                <a href="https://www.udemy.com/course/advanced-tsql-querying-using-sql-2014/" 
-                target="_blank"
-                data-tooltip="Databases, SQL and TSQL Querying from Udemy">
-                    <strong>Databases & SQL</strong> &#183; 3 hours &#183; Udemy
-                </a>
-
-                <a href="https://www.edx.org/learn/computer-science/ibm-networking-basics-and-security" 
-                target="_blank"
-                data-tooltip="Networking and Security from edX">
-                    <strong>Networking & Security</strong> &#183; 20 hours &#183; IBM
-                </a>
-
-                <a href="https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/" 
-                target="_blank"
-                data-tooltip="Database Systems from MIT">
-                    <strong>Database Systems</strong> &#183; N/A &#183; MIT
-                </a>
-
-                <a href="https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/" 
-                target="_blank"
-                data-tooltip="Design and Analysis of Algorithms from Massachusetts Institute of Technology">
-                    <strong>Algorithms</strong> &#183; N/A &#183; MIT
-                </a>
-
-                
-        </div>
-
-        <div class = "advanced-section">
+            <div class="category-group" data-category="Computer Science Foundations"><h3 class="category-title">Computer Science Foundations</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Programming Languages"><h3 class="category-title">Programming Languages</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Cybersecurity"><h3 class="category-title">Cybersecurity</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Data Engineering"><h3 class="category-title">Data Engineering</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Algorithms"><h3 class="category-title">Algorithms</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Data &amp; SQL"><h3 class="category-title">Data &amp; SQL</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Statistics & Probability"><h3 class="category-title">Statistics & Probability</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Mathematics"><h3 class="category-title">Mathematics</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Software Engineering"><h3 class="category-title">Software Engineering</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Systems Engineering"><h3 class="category-title">Systems Engineering</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Computer Networks"><h3 class="category-title">Computer Networks</h3><div class="course-grid"></div></div>
+        </section>
+        <section class="course-section" data-level="intermediate">
+            <h2 class="section-title">II Intermediate</h2>
+            <div class="category-group" data-category="Cybersecurity"><h3 class="category-title">Cybersecurity</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Data Engineering"><h3 class="category-title">Data Engineering</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Algorithms"><h3 class="category-title">Algorithms</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Programming Languages"><h3 class="category-title">Programming Languages</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Data &amp; SQL"><h3 class="category-title">Data &amp; SQL</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Statistics & Probability"><h3 class="category-title">Statistics &amp; Probability</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Mathematics"><h3 class="category-title">Mathematics</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Software Engineering"><h3 class="category-title">Software Engineering</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Systems Engineering"><h3 class="category-title">Systems Engineering</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Computer Networks"><h3 class="category-title">Computer Networks</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="AI &amp; Machine Learning"><h3 class="category-title">AI &amp; Machine Learning</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Computer Science Foundations"><h3 class="category-title">Computer Science Foundations</h3><div class="course-grid"></div></div>
+        </section>
+        <section class="course-section" data-level="advanced">
             <h2 class="section-title">III Advanced</h2>
-                
-            <a href="https://www.edx.org/learn/computer-science/pragmatic-ai-labs-open-source-llmops-2" 
-            target="_blank"
-            data-tooltip="Advanced Data Engineering from Pragmatic AI Labs">
-                <strong>Data Engineering</strong> &#183; 24 hours &#183; edX
-            </a>
-
-            <a href="https://ocw.mit.edu/courses/6-852j-distributed-algorithms-fall-2009/" 
-            target="_blank"
-            data-tooltip="Distributed Algorithms from Massachusetts Institute of Technology">
-                <strong>Distributed Algorithms</strong> &#183; N/A &#183; MIT
-            </a>
-
-            <a href="https://ocw.mit.edu/courses/6-254-game-theory-with-engineering-applications-spring-2010/" 
-            target="_blank"
-            data-tooltip="Game Theory with Engineering Applications and Mechanism Design from Massachusetts Institute of Technology">
-                <strong>Game Theory</strong> &#183; N/A &#183; MIT
-            </a>
-
-            <a href="https://fitech.io/en/studies/supervised-machine-learning/" 
-            target="_blank"
-            data-tooltip="Supervised Machine Learning from Fitech">
-                <strong>Machine Learning</strong> &#183; N/A &#183; Aalto University
-            </a>
-        </div>
-    </div>
+            <div class="category-group" data-category="Computer Science Foundations"><h3 class="category-title">General Computer Science</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Cybersecurity"><h3 class="category-title">Cybersecurity</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Data Engineering"><h3 class="category-title">Data Engineering</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Algorithms"><h3 class="category-title">Algorithms</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Programming Languages"><h3 class="category-title">Programming Languages</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Data &amp; SQL"><h3 class="category-title">Data &amp; SQL</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Statistics & Probability"><h3 class="category-title">Statistics &amp; Probability</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Mathematics"><h3 class="category-title">Mathematics</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Software Engineering"><h3 class="category-title">Software Engineering</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Systems Engineering"><h3 class="category-title">Systems Engineering</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="Computer Networks"><h3 class="category-title">Computer Networks</h3><div class="course-grid"></div></div>
+            <div class="category-group" data-category="AI &amp; Machine Learning"><h3 class="category-title">AI &amp; Machine Learning</h3><div class="course-grid"></div></div>
+        </section>
+    </main>
 </body>
 </html>
