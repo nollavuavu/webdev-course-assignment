@@ -1,7 +1,7 @@
 body {
     margin: 0;    /* remove default margin and padding*/
     padding: 0;
-    padding-bottom: 1000px;
+    /*padding-bottom: 1000px;*/
     font-family: "Nunito";
     background-color: black;
 }
@@ -9,12 +9,12 @@ body {
 .header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px 20px;
     height: 40px;
     flex-direction: row;
     flex: 100px 3;
     background-color: #0D0F11;
+    align-items: center;
 }
 
 .left-section {
@@ -38,7 +38,7 @@ body {
 .right-section {
     color: white;
 }
-.roadmap, .gallery, .report {
+.contact, .gallery, .report {
     color: white;
     text-decoration: none;
     margin-left: 15px;
@@ -52,6 +52,131 @@ body {
     gap: 20px;
     align-items: start;
     padding: 20px;
+}
+
+.contact-container {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    height: 40px;
+    font-size: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 17px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.contact-form {
+    width: min(450px, 100%);
+    box-sizing: border-box;
+    padding: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.right-section a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        min-height: 40px;
+        padding: 8px 10px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .logo {
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    .right-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .contact,
+    .gallery,
+    .report {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 16px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .course-section {
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .contact-form {
+        justify-self: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-description {
+        justify-self: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.contact-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
 }
 
 .course-section {
@@ -94,6 +219,11 @@ body {
     text-decoration: none;
     margin-left: 20px;
     color: white;
+    position: relative;
+    padding: 4px;
+    font-size: 15px;
+    white-space: nowrap;
+    cursor: default;
 }
 
 .course-entry a,
@@ -106,14 +236,6 @@ body {
 .course-entry a strong:hover {
     text-decoration: underline;
     cursor: pointer;
-}
-
-.course-entry {
-    position: relative;
-    padding: 4px;
-    font-size: 15px;
-    white-space: nowrap;
-    cursor: default;
 }
 
 .course-tooltip {
