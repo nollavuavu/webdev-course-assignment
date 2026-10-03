@@ -17,10 +17,6 @@ body {
     align-items: center;
 }
 
-.left-section {
-    color: white;
-}
-
 .logo,
 .logo:visited,
 .logo:hover,
@@ -57,7 +53,7 @@ body {
 .contact-container {
     color: white;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-items: center;
 }
@@ -75,7 +71,7 @@ body {
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 16px;
-    font-family: inherit;
+    font-family: "Nunito";
 }
 
 .contact-form button {
@@ -94,8 +90,18 @@ body {
     width: min(450px, 100%);
     box-sizing: border-box;
     padding: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    order: 2;
+}
+
+.contact-map {
+    order: 1;
+    box-sizing: border-box;
+    padding: 20px;
     background-color: black;
     color: white;
     align-items: center;
@@ -114,6 +120,7 @@ body {
     background-color: white;
     color: black;
 }
+
 @media (max-width: 768px) {
     .header {
         height: auto;
@@ -162,6 +169,7 @@ body {
         justify-self: center;
         margin-left: 0;
         margin-right: 0;
+        order: 1;
     }
 
     .contact-description {
@@ -169,22 +177,23 @@ body {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .contact-map {
+        order: 2;
+    }
+
 }
 
 .contact-title {
     font-size: 24px;
-    margin-bottom: 00px;
+    margin-bottom: 0px;
     text-align: center;
     font-weight: 600;
     color: white;
 }
 
-.contact-title h2 {
-    margin-top: 5px;
-}
-
 .contact-title h1 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .course-section {
@@ -222,6 +231,30 @@ body {
     color: white;
 }
 
+.cards-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgb(28, 30, 37);
+    border-radius: 10px;
+    border: 1px solid rgb(78, 75, 75);
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
 .course-entry {
     display: block;
     text-decoration: none;
@@ -242,6 +275,26 @@ body {
 }
 
 .course-entry a strong:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card a strong{
+    font-size: 24px;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.card a,
+.card a:visited,
+.card a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
