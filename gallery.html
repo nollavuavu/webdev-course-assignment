@@ -3,14 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Gallery &#183; Coursi</title>
 </head>
@@ -29,21 +21,45 @@
     </div>
 
     <main class="page">
-        <div class="gallery-container">         
-            <div>
-                <p class="gallery-caption">Coursi logo</p>
-                <img class="gallery-pics" src="media/logo.png" alt="Coursi logo">
+        <div class="gallery-container">
+            <div class="gallery-thumbnails">
+                <a href="media/logo.jpg" target="gallery-frame">
+                    <img class="gallery-thumbnail" src="media/logo.jpg" alt="Coursi logo">
+                </a>
+
+                <a href="media/mockup.jpg" target="gallery-frame">
+                    <img class="gallery-thumbnail" src="media/mockup.jpg" alt="Mockup">
+                </a>
+
+                <a href="media/map.jpg" target="gallery-frame">
+                    <img class="gallery-thumbnail" src="media/map.jpg" alt="Map">
+                </a>
+
+                <a href="media/lc.png" target="gallery-frame">
+                    <img class="gallery-thumbnail" src="media/lc.png" alt="Leetcode">
+                </a>
+
+                <a href="media/ceo.jpg" target="gallery-frame">
+                    <img class="gallery-thumbnail" src="media/ceo.jpg" alt="CEO">
+                </a>
             </div>
 
             <div>
-                <p class="gallery-caption">Mockup</p>
-                <img class="gallery-pics" src="media/mockup.png" alt="Mockup">
+                <iframe class="gallery-frame" name="gallery-frame" src="media/logo.jpg" title="Selected Gallery Image"></iframe>
             </div>
+        </div>
 
-            <div class="film-12-angry-men">
-                <p class="gallery-caption">12 Angry Men</p>
-                <iframe src="https://vidfast.vc/movie/tt0050083?autoPlay=false" title="12 Angry Men"> </iframe>
-            </div>
+        <div>
+            <iframe class="film" src="https://vidfast.vc/movie/tt0050083?autoPlay=false" title="12 Angry Men"> </iframe>
+        </div>
+
+        <div class="star-container">
+            <a href="report.html">
+                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="star">
+                    <polygon points="100,20 118,75 176,75 128,108 146,163 100,130 54,163 72,108 24,75 82,75"
+                        fill="#FFCD00" stroke="#FFCD00" stroke-width="2" stroke-linejoin="miter"/>
+                </svg>
+            </a>
         </div>
     </main>
 </body>

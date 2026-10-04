@@ -17,4 +17,6 @@ since I write the code while watching the tutorial on Youtube. The video is http
 
 - 19 Sep: Added a bunch of courses.
 
-- 23 Sep: contact working with formspree and now the site doesnt look ugly in phone
+- 23 Sep: Contact working with formspree and now the site doesnt look ugly in phone.
+
+- 4 Oct: The site is completed.

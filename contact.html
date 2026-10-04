@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="star.js" defer></script>
     <title>Contact &#183; Coursi</title>
 </head>
 <body>
@@ -29,7 +27,7 @@
                     <h1>Contact us</h1>
                     <h2>coursi.web@gmail.com</h2>
                 </div>
-                <form action="https://formspree.io/f/xyezjdda" method="POST">
+                <form action="https://formspree.io/f/xyezjdda" method="POST" target="_blank">
                     <label>
                         Your email:
                         <input type="email" name="email" placeholder="user123@gmail.com">
@@ -37,19 +35,26 @@
 
                     <label>
                         Your message:
-                        <textarea name="message" placeholder="Type your message here..." required></textarea>
+                        <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea>
                     </label>
 
-                    <button type="submit">Send Message</button>
+                    <button id="star-trigger" type="submit">Send Message</button>
                 </form>
             </div>
             <div class="contact-map">
                 <div class="contact-title">
                     <h1>Find us here</h1>
-
                     <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=24.965609908103946%2C60.200386946581894%2C24.970631003379822%2C60.202189075668294&layer=mapnik&marker=60.201288023497405%2C24.968120455741882"></iframe>
                 </div>
             </div>
+        </div>
+        <div class="star-container">
+            <a href="report.html">
+                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" id="star" class="star">
+                    <polygon points="100,20 118,75 176,75 128,108 146,163 100,130 54,163 72,108 24,75 82,75"
+                        fill="#FFCD00" stroke="#FFCD00" stroke-width="2" stroke-linejoin="miter"/>
+                </svg>
+            </a>
         </div>
     </main>
 </body>
