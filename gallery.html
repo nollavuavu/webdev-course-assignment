@@ -21,6 +21,12 @@
     </div>
 
     <main class="page">
+        <picture class="device-image">
+            <source srcset="media/phone.png" media="(max-width: 600px)">
+            <source srcset="media/tablet.png" media="(max-width: 1024px)">
+
+            <img src="media/desktop.png" alt="Device">
+        </picture>
         <div class="gallery-container">
             <div class="gallery-thumbnails">
                 <a href="media/logo.jpg" target="gallery-frame">
@@ -51,15 +57,6 @@
 
         <div>
             <iframe class="film" src="https://vidfast.vc/movie/tt0050083?autoPlay=false" title="12 Angry Men"> </iframe>
-        </div>
-
-        <div class="star-container">
-            <a href="report.html">
-                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="star">
-                    <polygon points="100,20 118,75 176,75 128,108 146,163 100,130 54,163 72,108 24,75 82,75"
-                        fill="#FFCD00" stroke="#FFCD00" stroke-width="2" stroke-linejoin="miter"/>
-                </svg>
-            </a>
         </div>
     </main>
 </body>
