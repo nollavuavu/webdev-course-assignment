@@ -536,15 +536,19 @@ body {
     }
 
     .page h1 {
-        font-size: 1.25em;
+        font-size: 1.4em;
     }
 
     .page h2 {
-        font-size: 1em;
+        font-size: 1.15em;
     }
 
     .page p {
-        font-size: 0.75em;
+        font-size: 0.9em;
+    }
+
+    .report-title {
+        font-size: 1.65em;
     }
 
     .star {
