@@ -357,6 +357,13 @@ body {
     margin: 0 auto;
 }
 
+.neverslop {
+    margin: 0 auto;
+    display: block;
+    width: 405px;
+    height: auto;
+}
+
 .report-image {
     display: block;
     width: 512px;
@@ -446,6 +453,11 @@ body {
 }
 
 @media (max-width: 768px) {
+    .neverslop {
+        width: 202.5px;
+        height: 270px;
+    }
+
     .report-image {
         width: 256px;
         height: 144px;

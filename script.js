@@ -51,21 +51,33 @@ async function loadCourses() {
 
     const courses = await response.json();
     courses.sort((first, second) => first.title.localeCompare(second.title));
-    courses.forEach((course) => {
-        const section = sectionByLevel[course.level];
-        if (!section) return;
 
-        const categoryGroup = [...section.querySelectorAll('.category-group')]
-            .find((group) => group.dataset.category === course.category);
-        const courseGrid = categoryGroup?.querySelector('.course-grid');
+    for (const course of courses) {
+        const section = sectionByLevel[course.level];
+        if (!section) {
+            continue;
+        }
+
+        const categoryGroups = section.querySelectorAll('.category-group');
+        const categoryGroup = [...categoryGroups].find(
+            (group) => group.dataset.category === course.category
+        );
+
+        if (!categoryGroup) {
+            continue;
+        }
+
+        const courseGrid = categoryGroup.querySelector('.course-grid');
         if (courseGrid) {
             courseGrid.appendChild(createCourseLink(course));
         }
-    });
+    }
 
-    catalog.querySelectorAll('.category-group').forEach((group) => {
-        group.hidden = group.querySelector('.course-grid').children.length === 0;
-    });
+    const categoryGroups = catalog.querySelectorAll('.category-group');
+    for (const categoryGroup of categoryGroups) {
+        const courseGrid = categoryGroup.querySelector('.course-grid');
+        categoryGroup.hidden = courseGrid.children.length === 0;
+    }
 }
 
 loadCourses().catch((error) => {
