@@ -371,6 +371,16 @@ body {
     margin: 0 auto;
 }
 
+.coursi-video {
+    display: block;
+    margin: 0 auto;
+}
+
+.coursi-audio {
+    display: block;
+    margin: 0 auto;
+}
+
 .star-container {
     position: relative;
     width:100%;
@@ -399,6 +409,11 @@ body {
 }
 
 @media (max-width: 1024px) {
+    .coursi-video {
+        width: 720px;
+        height: 480px;
+    }
+
     .logo {
         margin-left: 10px;
     }
@@ -453,6 +468,11 @@ body {
 }
 
 @media (max-width: 768px) {
+    .coursi-video {
+        width: 330px;
+        height: 22ß0px;
+    }
+
     .neverslop {
         width: 202.5px;
         height: 270px;
