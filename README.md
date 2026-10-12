@@ -23,4 +23,4 @@ since I write the code while watching the tutorial on Youtube. The video is http
 
 - 12 Oct: Everything is going and running
 
-*This website is hosted on my school's domain: https://people.arcada.fi/~dinhhoan/webdev/index.html *
+*This website is hosted on my school's domain: https://people.arcada.fi/~dinhhoan/webdev/index.html *  

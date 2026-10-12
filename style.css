@@ -355,6 +355,7 @@ body {
 .Feenberg {
     display: block;
     margin: 0 auto;
+    border: 0;
 }
 
 .neverslop {
@@ -470,7 +471,7 @@ body {
 @media (max-width: 768px) {
     .coursi-video {
         width: 330px;
-        height: 22ß0px;
+        height: 220px;
     }
 
     .neverslop {
