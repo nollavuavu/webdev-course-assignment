@@ -20,3 +20,7 @@ since I write the code while watching the tutorial on Youtube. The video is http
 - 23 Sep: Contact working with formspree and now the site doesnt look ugly in phone.
 
 - 4 Oct: The site is completed.
+
+- 12 Oct: Everything is going and running
+
+*This website is hosted on my school's domain: https://people.arcada.fi/~dinhhoan/webdev/index.html *
